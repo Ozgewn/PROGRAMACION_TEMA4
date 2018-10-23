@@ -3,7 +3,7 @@ public class EjemploUno {
 
         int i=3;
         int j=4;
-        boolean etiqueta=false;
+        boolean etiqueta=true;
 
         if((i==3)&&(j==4)){
             System.out.println("La condición se cumple");

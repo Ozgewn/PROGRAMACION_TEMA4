@@ -5,7 +5,7 @@ public class JuegoNumeroAleatorio {
     public static void main(String[] args) {
 
         NumeroAleatorio miNumero = new NumeroAleatorio(1, 10);
-        miNumero.MostrarDatos();
+        System.out.println(miNumero.MostrarDatos());
         JOptionPane.showMessageDialog(null, miNumero.PreguntarPorNumero(), "Pregunta", JOptionPane.INFORMATION_MESSAGE);
         miNumero.setRespuestaNumero(Integer.parseInt(JOptionPane.showInputDialog("Introduce numero")));
         if (miNumero.getRespuestaNumero() != miNumero.getNumeroRandom()) {

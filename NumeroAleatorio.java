@@ -47,7 +47,7 @@ public class NumeroAleatorio {
 
     public void setRespuestaNumero(int respuestaNumero) {
         this.respuestaNumero = respuestaNumero;
-        //System.out.println(respuestaNumero);
+        System.out.println(respuestaNumero);
     }
 
     public int getRespuestaNumero() {

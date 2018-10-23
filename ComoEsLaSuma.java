@@ -23,17 +23,17 @@ public class ComoEsLaSuma {
         this.b = b;
     }
 
-    private int SumaNumeros(){
-        return a+b;
+    private int SumaNumeros() {
+        return a + b;
     }
 
-    public String MuestroResultado(){
-        if (SumaNumeros()==0){
-            return "La suma de "+getA()+" + "+getB()+" = 0 es CERO";
-        }else if (SumaNumeros()>=0){
-            return "La suma de "+getA()+" + "+getB()+" = "+SumaNumeros()+" POSITIVO";
-        }else {
-            return "La suma de "+getA()+" + "+getB()+" = "+SumaNumeros()+" NEGATIVO";
+    public String MuestroResultado() {
+        if (SumaNumeros() == 0) {
+            return "La suma de " + getA() + " + " + getB() + " = 0 es CERO";
+        } else if (SumaNumeros() >= 0) {
+            return "La suma de " + getA() + " + " + getB() + " = " + SumaNumeros() + " POSITIVO";
+        } else {
+            return "La suma de " + getA() + " + " + getB() + " = " + SumaNumeros() + " NEGATIVO";
         }
 
     }
