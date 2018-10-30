@@ -18,7 +18,10 @@ public class CaracterIgual {
 
     public String sonIguales() {
         String salida = "No son iguales";
-        if (getA() == getB()) {
+        char aMayuscula=Character.toUpperCase(getA());
+        char bMayuscula=Character.toUpperCase(getB());
+
+        if (aMayuscula == bMayuscula) {
             return salida = "Los carácteres " + a + " y " + b + " son iguales";
         }
         return salida;
