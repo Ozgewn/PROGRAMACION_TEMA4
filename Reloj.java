@@ -17,11 +17,8 @@ public class Reloj {
     }
 
     public Reloj(){
-        this.hora=0;
-        this.minutos=0;
-        this.segundos=0;
-        this.SEPARADOR =getSEPARADOR();
-        CONTADOR++;
+        this(0,0,0);
+        
     }
 
     public static int totalRelojes() {
@@ -31,9 +28,9 @@ public class Reloj {
     public static String esValida(int hora, int minutos, int segundos) {
         String salida;
 
-        boolean horaValida=hora>0 && hora<59;
-        boolean minutosValidos=minutos>0 && minutos<59;
-        boolean segundosValidos=segundos>0 && segundos<59;
+        boolean horaValida=hora>=0 && hora<24;
+        boolean minutosValidos=minutos>=0 && minutos<60;
+        boolean segundosValidos=segundos>=0 && segundos<60;
 
         if (!horaValida && !minutosValidos && !segundosValidos){
             salida=" La hora es válida";
@@ -83,9 +80,9 @@ public class Reloj {
 
     public String devuelveHora(){
         String salida="";
-        salida+=" "+getHora()+""+getSEPARADOR();
-        salida+=getMinutos()+""+getSEPARADOR();
-        salida+=""+getSegundos();
+        salida+=(hora<10?"0":"")+getHora()+""+getSEPARADOR();
+        salida+=(minutos<10?"0":"")+getMinutos()+""+getSEPARADOR();
+        salida+=(segundos<10?"0":"")+getSegundos();
         return salida;
     }
 
